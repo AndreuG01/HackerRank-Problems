@@ -1,4 +1,6 @@
 /**
+ * Andreu Garcies Ramon 09-10-2021
+ * 
  * A subarray of an n-element array is an array composed from a contiguous block of the original array's elements.
  * For example, if array = [1, 2, 3], then the subarrays are [1], [2], [3], [1, 2], [1, 3], [2, 3] and [1, 2, 3].
  * Something like [1, 3] would not be a subarray as it is not a contiguous subsection of the original array.

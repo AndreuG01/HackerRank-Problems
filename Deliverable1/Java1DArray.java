@@ -1,4 +1,6 @@
 /**
+ * Andreu Garcies Ramon 08-10-2021
+ * 
  * INPUT FORMAT: The first line contains a single integer, n, denoting the size of the array.
  * Each line i of the subsequent lines contains a single integer denoting the value of the element a_i
  * 
