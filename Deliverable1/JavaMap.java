@@ -37,7 +37,7 @@ public class JavaMap {
         }
 
         String query = bufferReader.readLine();
-        while (query != null || query == "") { // query != null is because Hacker rank reads from files.
+        while (query != null && query != "") { // query != null is because Hacker rank reads from files.
                                                // query == "" is in case that we run the program from the command line.
             
             if (map.containsKey(query) == true) {
