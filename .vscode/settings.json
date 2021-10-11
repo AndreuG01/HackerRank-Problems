@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "Introduction",
-        "Deliverable1"
+        "Deliverable1",
+        "Data Structures"
     ]
 }
