@@ -1,1 +1,6 @@
-{}
+{
+    "java.project.sourcePaths": [
+        "Introduction",
+        "Deliverable1"
+    ]
+}
