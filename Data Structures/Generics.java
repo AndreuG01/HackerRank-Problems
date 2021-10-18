@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Andreu Garcies Ramon 11-10-2021
  * 
@@ -8,22 +11,42 @@
  * 
  * Do not use method overloading because your anwer will not be accepted.
  */
-
-public class Generics {
+public class Generics<GenericType> {
+    
     public static void main(String[] args) {
-        Integer[] intArray = {1, 2, 3}; // we can not use int since it is not a subtype of Object. Integer is a subtype of Object.
-        String[] stringArray = {"Hello", "World"};
+        GenericClass<Integer> intArray = new GenericClass<Integer>();
+        for (int i = 0; i < 3; i++) {
+            intArray.addAttribute(i + 1);
+        }
 
-        printGenericArray(intArray);
-        printGenericArray(stringArray);
+        GenericClass<String> stringArray = new GenericClass<String>();
+        stringArray.addAttribute("Hello");
+        stringArray.addAttribute("World");
+
+        intArray.printAttributes();
+        stringArray.printAttributes();
 
 
 
     }
+}
 
-    private static void printGenericArray(Object[] array) {
-        for (Object object: array) {
-            System.out.println(object);
+class GenericClass<GenericType> {
+    private List<GenericType> attributes;
+
+    public GenericClass() {
+        attributes = new ArrayList<GenericType>();
+    }
+
+    public void addAttribute(GenericType attribute) {
+        attributes.add(attribute);
+    }
+
+    public void printAttributes() {
+        for (GenericType attribute: attributes) {
+            System.out.println(attribute);
         }
     }
 }
+
+
