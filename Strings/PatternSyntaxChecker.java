@@ -26,7 +26,6 @@ public class PatternSyntaxChecker {
 
         for (int i = 0; i < numTestCases; i++) {
             String pattern = scanner.nextLine();
-            System.out.println("Input pattern: " + pattern);
             // The function compile() does not return any value. If the expression that it receives is incorrect,
             // it throws a PatternSyntaxException. Therefore, the only thing that we have to do is to caputre this
             // exception in case that it is thrown and print the corresponding message.
