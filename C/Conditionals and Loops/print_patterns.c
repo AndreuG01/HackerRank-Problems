@@ -27,7 +27,11 @@ void print_pattern(int number) {
             int min = find_minimum(i, j);
             min = find_minimum(min, length - i - 1);
             min = find_minimum(min, length - j - 1);
-            printf("%d ", number-min);
+            if (j == length - 1) {
+                printf("%d", number - min);
+            } else {
+                printf("%d ", number - min);
+            }
         }
         printf("\n");
     }
